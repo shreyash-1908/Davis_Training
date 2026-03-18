@@ -3,12 +3,8 @@
 # Output: Eligible / Not Eligible
 
 
-n = int(input())
-count = 0
+def check(age):
+    return age >= 18
 
-for i in range(n):
-    age = int(input())
-    if age < 18:
-        count += 1
-
-print(count)
+age = int(input("Enter age: "))
+print("Eligible" if check(age) else "Not Eligible")

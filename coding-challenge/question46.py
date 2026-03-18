@@ -3,11 +3,7 @@
 # Output: Final price after discount
 
 
-while True:
-    price = float(input())
+p = float(input("Enter price: "))
+d = float(input("Enter discount: "))
 
-    if price == 0:
-        break
-
-    d = float(input())
-    print(price - (price * d / 100))
+print(f"Final price after discount: {(lambda p,d: p-p*d/100)(p,d)}")

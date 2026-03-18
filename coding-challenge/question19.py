@@ -3,8 +3,7 @@
 # Output: Even numbers list
 
 
-n = int(input("Enter N: "))
+N = int(input("Enter N: "))
 
-for i in range(n, 0, -1):
-    if i % 2 == 0:
-        print(i, end=" ")
+print(f"Even numbers between 1 and {N}:")
+print(*[i for i in range(2, N+1, 2)])

@@ -2,10 +2,8 @@
 # Input: Enter age
 # Output: Eligible / Not Eligible
 
-def is_eligible(age):
-    if age >= 18:
-        return "Eligible"
-    return "Not Eligible"
+def check(age):
+    return age >= 18
 
 age = int(input("Enter age: "))
-print(is_eligible(age))
+print("Eligible" if check(age) else "Not Eligible")

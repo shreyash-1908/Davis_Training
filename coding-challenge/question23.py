@@ -2,11 +2,10 @@
 # Input: Enter units
 # Output: Total bill amount
 
-u = int(input())
+price = float(input("Enter price: "))
+discount = float(input("Enter discount: "))
 
-if u <= 100:
-    print(u * 5)
-elif u <= 200:
-    print(u * 7)
+if price > 0 and 0 <= discount <= 100:
+    print(f"Final price after discount: {price - price*discount/100}")
 else:
-    print(u * 10)
+    print("Invalid input")
